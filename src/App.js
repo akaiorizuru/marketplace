@@ -1,12 +1,18 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Button from '@material-ui/core/Button';
+import {BrowserRoute as Router, Route} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <Button variant="contained" color="secondary">Test</Button>
-    </div>
-  );
+class App extends Component{
+  render(){
+    return(
+      <Router>
+        <header>Navigation</header>
+        <Button variant="contained" color="secondary">Test</Button>
+      </Router>
+
+      
+    )
+  }
 }
 
 export default App;
